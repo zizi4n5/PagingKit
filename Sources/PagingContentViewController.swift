@@ -221,7 +221,7 @@ public class PagingContentViewController: UIViewController {
         leftSidePageIndex = page
         
         if isScrollingToAnotherPage {
-            delegate?.contentViewController(viewController: self, willFinishPagingAt: leftSidePageIndex, animated: animated)
+            delegate?.contentViewController(viewController: self, willFinishPagingAt: page, animated: animated)
         }
         
         move(to: page, animated: animated) { [weak self] (finished) in
